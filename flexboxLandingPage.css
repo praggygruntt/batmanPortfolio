@@ -1,0 +1,48 @@
+html, body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    background-color: #242424;
+}
+nav.navbar {
+    display: flex;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: rgb(0,0,0);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#242424",GradientType=1);
+}
+nav ul.navbarList {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+nav ul.navbarList li {
+    list-style: none;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+nav ul.navbarList a {
+    color: white;
+    text-decoration: none;
+    color: #fedf00;
+}
+div.brand img {
+    max-height: 50px;
+}
+
