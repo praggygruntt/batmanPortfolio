@@ -19,10 +19,10 @@ nav.navbar {
     margin: 0 auto;
     box-sizing: border-box;
     background: rgb(0,0,0);
-    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%);
-    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#242424",GradientType=1);
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(66,66,66,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#424242",GradientType=1);
 }
 nav ul.navbarList {
     display: flex;
