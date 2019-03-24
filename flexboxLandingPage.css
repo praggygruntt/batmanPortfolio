@@ -51,7 +51,26 @@ ul.navbarList li.dropdownLink {
 .expandNav {
     height: 175px;
 }
-
+div.headshotWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 6rem 0;
+    background-color: black;
+}
+div.headshotWrapper img {
+    height: 200px;
+    max-width: 200px;
+    width: 100%;
+    border-radius: 100%;
+    box-shadow: 1px 1px 60px 6px rgba(255,255,255,20%);
+}
+div.headshotWrapper h1 {
+    color: #fedf00;
+    font-size: 3em;
+}
 /*MEDIA QUERIES*/
 @media(max-width: 768px) {
     nav ul.navbarList {
@@ -83,5 +102,8 @@ ul.navbarList li.dropdownLink {
     ul.navbarList.responsive li {
         position: relative;
         top: 50px;
+    }
+    div.headshotWrapper h1 {
+        font-size: 2em;
     }
 }
