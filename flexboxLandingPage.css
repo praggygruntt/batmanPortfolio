@@ -45,4 +45,43 @@ nav ul.navbarList a {
 div.brand img {
     max-height: 50px;
 }
+ul.navbarList li.dropdownLink {
+    display: none;
+}
+.expandNav {
+    height: 175px;
+}
 
+/*MEDIA QUERIES*/
+@media(max-width: 768px) {
+    nav ul.navbarList {
+        display: flex;
+        align-items: flex-end;
+    }
+    ul.navbarList li a.navLink {
+        display: none;
+    }
+    ul.navbarList li.dropdownLink {
+        display: block;
+        font-size: 1.4em;
+        position: absolute;
+        top: 25.5px;
+        right: 20px;
+    }
+    ul.navbarList.responsive li.dropdownLink {
+        position: absolute;
+        top: 25.5px;
+        right: 20px;
+    }
+    ul.navbarList.responsive {
+        flex-direction: column;   
+    }
+    ul.navbarList.responsive li a.navLink {
+        display: block;
+        margin-bottom: 8px;
+    }
+    ul.navbarList.responsive li {
+        position: relative;
+        top: 50px;
+    }
+}
