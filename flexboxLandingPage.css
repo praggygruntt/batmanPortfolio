@@ -142,6 +142,7 @@ section.portfolio div.container {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 5%;
 }
 div.portfolioBox img {
     width: 100%;
@@ -162,18 +163,40 @@ div.container h1 {
     margin: 0 auto;
     color: #fbd30d;
     font-size: 1.8em;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 div.portfolioBox:hover {
     cursor: pointer;
     transform: scale(1.05);
-    transition: .2s ease-in-out;   
+    transition: .2s ease-in ease-out;   
+}
+section.contact {
+    background-color: #fbd30d;
+    width: 30%;
+    margin: 0 auto;
+    color: black;
+    padding: 2%;
+    margin: 50px auto;
+}
+section.contact h1 {
+    text-align: center;
+}
+label, div.formGroup {
+    margin: 10px;
+}
+section.contact form input, textarea{
+    width: 95%;
+}
+section.contact form button.quoteButton{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 
 
 /*MEDIA QUERIES*/
-@media(max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
    
     div.headshotWrapper h1 {
         font-size: 2em;
@@ -196,7 +219,7 @@ div.portfolioBox:hover {
         width: 25%;
 }
 }
-@media(max-width: 780px) {
+@media only screen and (max-width: 780px) {
      nav ul.navbarList {
         display: flex;
         align-items: flex-end;
@@ -234,4 +257,15 @@ div.portfolioBox:hover {
     cursor: pointer;
     transform: none;
 }
+}
+
+@media screen and (max-width: 800px) {
+    section.contact {
+        background-color: #fbd30d;
+        width: 80%;
+        margin: 0 auto;
+        color: black;
+        padding: 2%;
+        margin: 50px auto;
+    }
 }
