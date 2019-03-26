@@ -8,6 +8,7 @@ html, body {
     color: white;
     margin: 0;
     background-color: #242424;
+    box-sizing: border-box;
 }
 nav.navbar {
     display: flex;
@@ -57,7 +58,7 @@ div.headshotWrapper {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 6rem 0;
+    padding: 3rem 0;
     background-color: black;
 }
 div.headshotWrapper img {
@@ -65,15 +66,73 @@ div.headshotWrapper img {
     max-width: 200px;
     width: 100%;
     border-radius: 100%;
-    box-shadow: 1px 1px 60px 6px rgba(255,255,255,20%);
+    box-shadow: 1px 1px 60px 6px #fbd30d66;
 }
 div.headshotWrapper h1 {
     color: #fedf00;
     font-size: 3em;
+    padding-top: 5px;
+}
+section.servicesSection {
+    background-color: #242424;
+    padding: 2rem 1rem;
+}
+section.servicesSection div.container {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+div.snippetWrapper h3 {
+    color: #fbd30d;
+}
+div.serviceContainer1, div.serviceContainer2, div.serviceContainer3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    box-shadow: 5px 5px 4px 1px #fbd30d66;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: black;
+}
+div.snippetWrapper {
+    padding: 5% 5%;
+    font-size: 1.2rem;
+    width: 50%;
+}
+div.iconWrapper {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+img.serviceIcon {
+    width: 100%;
+    border-radius: 2px;
+}
+div.snippetInfo {
+    line-height: 1.3;
 }
 /*MEDIA QUERIES*/
-@media(max-width: 768px) {
-    nav ul.navbarList {
+@media(max-width: 1000px) {
+   
+    div.headshotWrapper h1 {
+        font-size: 2em;
+    }
+    section.servicesSection div.container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    div.serviceContainer1, div.serviceContainer2, div.serviceContainer3 {
+        flex-direction: column;
+    }
+    div.serviceContainer2 {
+        flex-direction: column-reverse;
+    }
+    div.snippetWrapper, div.iconWrapper {
+        width: 100%;
+        padding: 5px;
+    }
+}
+@media(max-width: 780px) {
+     nav ul.navbarList {
         display: flex;
         align-items: flex-end;
     }
@@ -102,8 +161,5 @@ div.headshotWrapper h1 {
     ul.navbarList.responsive li {
         position: relative;
         top: 50px;
-    }
-    div.headshotWrapper h1 {
-        font-size: 2em;
     }
 }
